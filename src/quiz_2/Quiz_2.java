@@ -6,7 +6,9 @@ package quiz_2;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 public class Quiz_2 
+
 {
+	//declaring variables
         static String myUsername = "Amirkhan";
         static String myPassword = "Mukashev";
         static String newUsername;
@@ -18,20 +20,8 @@ public class Quiz_2
         Scanner keyboard = new Scanner (System.in);
     
   
-    /*    
-    public static String doAuthentication(String newUsername, String newPassword)
-    {
-        String message = "Worng username or password!";
-        
-        //code to check the validity of the input data
-        if ((newUsername == "Amirkhan") && (newPassword == "Mukashev"))
-            System.out.println("Welcome " + newUsername);
-        else       
-            System.out.println(message);
-        return message;
-    }
-    */
-    
+   
+    // authenticaiting method itself
     public static boolean doAuthentication (String newUsername, String newPassword)
     {
     String myUsername = "Amirkhan", myPassword = "Mukashev";
@@ -53,7 +43,7 @@ public class Quiz_2
         
     
     
-    
+    //main method 
     public static void main(String[] args) 
     {
         Scanner keyboard = new Scanner (System.in);
@@ -72,18 +62,3 @@ public class Quiz_2
 
 
 }
-/*
-    Quiz_2 myUserName = new Quiz_2();
-		myUserName.username = "Amirkhan";
-		myUserName.password = "Mukashev";
-		myUserName.writeOutput();
-
-		System.out.println(scooby.name + " is a " + scooby.breed + ".");
-		System.out.print("He is " + scooby.age + " years old, or ");
-		int humanYears = scooby.getAgeInHumanYears();
-		System.out.println(humanYears + " in human years.");
-
-        
-    }
-}
-*/
